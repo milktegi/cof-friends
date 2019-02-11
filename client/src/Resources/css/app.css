@@ -1,7 +1,7 @@
 body {
     margin:0;
     padding:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 a {
@@ -35,7 +35,7 @@ input {
     font-size: 17px;
     padding: 8px;
     border-radius: 3px;
-    font-family: Roboto;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
     width: 100%;
     box-sizing: border-box;
@@ -132,7 +132,7 @@ button {
     min-height: 100vh;
     text-align: center;
     font-size: 90px;
-    font-family: 'Righteous', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
     color: #d5ebfe;
 }
 
@@ -174,7 +174,7 @@ footer .footer_discl {
 }
 .featured_text {
     position: relative;
-    font-family: 'Righteous', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 
@@ -262,7 +262,7 @@ footer .footer_discl {
 .match_block .match_wrapper .match_top .left,
 .match_block .match_wrapper .match_bottom .left {
     background: #ffffff; 
-    font-family: 'Righteous', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
     flex-grow: 1;
     margin-right: 5px;
     padding: 10px;
@@ -416,7 +416,7 @@ footer .footer_discl {
     border: 1px solid #ececec;
     width: 300px;
     padding: 10px 10px 20px 10px;
-    font-family: 'Righteous';
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .player_card_wrapper .player_card_thmb {
     border: 1px solid #eeeeee;
@@ -470,7 +470,7 @@ footer .footer_discl {
     text-transform: uppercase;
     text-transform: uppercase;
     font-size: 150px;
-    font-family: 'Righteous', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
     flex-grow: 1;
     color:#d5ebfd;
     line-height: 135px;
@@ -494,7 +494,7 @@ footer .footer_discl {
 }
 
 .promotion_wrapper .enroll_title {
-    font-family: 'Righteous', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 26px;
     color: #4e4e4e;
 }
