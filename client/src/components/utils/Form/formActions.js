@@ -7,11 +7,11 @@
 export const validate = (element, formdata=[]) => {
 	let error = [ true, ''];
 	
-	if(element.validation.email){
-		const valid = /\S+@\S+\.S+/.test(element.value)
-		const message = `${!valid ? '이메일을 바르게 입력해주세요' : ''}`
-		error = !valid ? [valid, message] : error
-	}
+   if(element.validation.email){
+        const valid = /\S+@\S+\.\S+/.test(element.value)
+        const message = `${!valid ? 'Must be a valid email':''}`;
+        error = !valid ? [valid,message] : error;
+    }
 	if(element.validation.required){
 		const valid = element.value.trim() !== '';
 		const message = `${!valid ? '필수 입력사항입니다' : ''}`

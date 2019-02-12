@@ -83,12 +83,12 @@ class Login extends Component {
 					formdata={this.state.formdata.password}
 					change={(element)=> this.updateForm(element)}
 					/>
-					{/* { this.state.formError ? 
+					{ this.state.formError ? 
 						<div className="error_label">
 							필수 입력 사항입니다.
 						</div>
 						: null 
-					} */}
+					}
 					<button onClick={(event)=> this.submitForm(event)}>로그인</button>
 				</form>
 			</div>
