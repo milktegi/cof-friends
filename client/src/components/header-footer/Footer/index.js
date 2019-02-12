@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
                 <div className="wrapper">
                     <div className="left">
-                        <h2>Contact information</h2>
+                        <h2>고객 센터</h2>
                         <div className="business_nfo">
                             <div className="tag">
                                 <FontAwesomeIcon
@@ -25,7 +25,7 @@ const Footer = () => {
                                     className="icon"
                                 />
                                 <div className="nfo">
-                                    <div>Address</div>
+                                    <div>주소지</div>
                             
                                 </div>
                             </div>
@@ -35,7 +35,7 @@ const Footer = () => {
                                     className="icon"
                                 />
                                 <div className="nfo">
-                                    <div>Phone</div>
+                                    <div>전화 문의</div>
                                   
                                 </div>
                             </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                                     className="icon"
                                 />
                                 <div className="nfo">
-                                    <div>Working hours</div>
+                                    <div>근무 시간</div>
                      
                                 </div>
                             </div>
@@ -55,17 +55,18 @@ const Footer = () => {
                                     className="icon"
                                 />
                                 <div className="nfo">
-                                    <div>Email</div>
+                                    <div>이메일</div>
                           
                                 </div>
                             </div>
                         </div>
                     </div> 
                     <div className="left">
-                        <h2>Be the first to know</h2>
+                        <h2>1:1 문의</h2>
                         <div>
                             <div>
-                            Get all the latest information on events, sales and offers.You can miss out.
+                            궁금한 점이 있으신가요? 
+                            문의를 주시면 친절히 답변 드리겠습니다.
                             </div>
                         </div>
                     </div>      
