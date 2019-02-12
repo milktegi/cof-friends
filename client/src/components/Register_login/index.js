@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../utils/button';
+import Login from './login';
 
 const RegisterLogin = () => {
 	return ( 
@@ -24,7 +25,7 @@ const RegisterLogin = () => {
 					 <div className="right">
 						 <h2>가입된 회원</h2>
 						 <p>이미 계정이 있으시면, 지금 로그인 하세요.</p>
-						 Login
+						 <Login/>
 					 </div>
 				 </div>
 			 </div>
