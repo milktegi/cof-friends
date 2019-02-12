@@ -3,6 +3,8 @@ import Formfield from '../utils/Form/formField';
 
 import { connect } from 'react-redux';
 
+// formAction의 update함수 
+import { update } from '../utils/Form/formActions'
 class Login extends Component {
 	
 	state = {
@@ -37,14 +39,19 @@ class Login extends Component {
 					required: true
 				},
 				valid: false,
-				tocued: false,
+				touched: false,
 				validationMessage: ''
 			}
 		}
 	}
 	
-	updateForm = () => {
-		
+	updateForm = (element) => {
+		// formAction에 있는 함수를 호출
+		const newFormdata = update(element, this.state.formdata, 'login');
+		this.setState({
+			formError: false,
+			formdata: newFormdata
+		})
 	}
 	
 	submitForm = () => {
@@ -59,6 +66,11 @@ class Login extends Component {
 					<Formfield
 					id={'email'}
 					formdata={this.state.formdata.email}
+					change={(element)=> this.updateForm(element)}
+					/>
+					<Formfield
+					id={'password'}
+					formdata={this.state.formdata.password}
 					change={(element)=> this.updateForm(element)}
 					/>
 				</form>
