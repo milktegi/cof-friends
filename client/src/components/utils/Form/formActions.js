@@ -7,8 +7,6 @@
 export const validate = (element, formdata=[]) => {
 	let error = [ true, ''];
 	
-	
-	
 	if(element.validation.email){
 		const valid = /\S+@\S+\.S+/.test(element.value)
 		const message = `${!valid ? '이메일을 바르게 입력해주세요' : ''}`
@@ -68,3 +66,20 @@ export const update = (element, formdata, formName) => {
 	
 }
 
+export const generateData = (formdata, formName) => {
+	let dataToSubmit = {};
+	for(let key in formdata){
+		dataToSubmit[key] = formdata[key].value;
+	}
+	return dataToSubmit;
+}
+
+
+export const isFormValid = (formdata, formName) => {
+
+	let formIsValid = true;
+	for(let key in formdata){
+		formIsValid = formdata[key].valid && formIsValid
+	}
+	return formIsValid;
+}
